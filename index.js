@@ -1,12 +1,14 @@
+import dotenv from "dotenv";
 import { Server } from "socket.io";
 
+dotenv.config({ path: ".env" });
 const io = new Server({
   cors: {
-    origin: "http://localhost:3000",
+    origin: [process.env.DB_CLIENT],
   },
 });
 
-io.listen(3001);
+io.listen(80);
 
 const characters = [];
 
