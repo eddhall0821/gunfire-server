@@ -4,7 +4,10 @@ import { Server } from "socket.io";
 dotenv.config({ path: ".env" });
 const io = new Server({
   cors: {
-    origin: [process.env.DB_CLIENT],
+    origin: [
+      process.env.DB_CLIENT,
+      "https://eddhall0821.github.io/gunfire-client",
+    ],
   },
 });
 

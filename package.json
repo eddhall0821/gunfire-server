@@ -1,5 +1,5 @@
 {
-  "homepage": "https://eddhall0821.github.io/gunfire",
+  "homepage": "https://eddhall0821.github.io/gunfire-server",
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
