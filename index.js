@@ -7,6 +7,7 @@ const io = new Server({
     origin: [
       process.env.DB_CLIENT,
       "https://eddhall0821.github.io/gunfire-client",
+      "http://165.132.5.141:3000",
     ],
   },
 });
